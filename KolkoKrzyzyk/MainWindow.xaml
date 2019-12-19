@@ -6,7 +6,31 @@
         xmlns:local="clr-namespace:KolkoKrzyzyk"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="450">
-    <Grid>
-        
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="70"/>
+            <Setter Property="Background" Value="White"/>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="Container">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" x:Name="Button_0_0" Click="Button_OnClick"/>
+        <Button Grid.Row="1" Grid.Column="0" x:Name="Button_1_0" Click="Button_OnClick"/>
+        <Button Grid.Row="2" Grid.Column="0" x:Name="Button_2_0" Click="Button_OnClick"/>
+        <Button Grid.Row="0" Grid.Column="1" x:Name="Button_0_1" Click="Button_OnClick"/>
+        <Button Grid.Row="1" Grid.Column="1" x:Name="Button_1_1" Click="Button_OnClick"/>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="Button_2_1" Click="Button_OnClick"/>
+        <Button Grid.Row="0" Grid.Column="2" x:Name="Button_0_2" Click="Button_OnClick"/>
+        <Button Grid.Row="1" Grid.Column="2" x:Name="Button_1_2" Click="Button_OnClick"/>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="Button_2_2" Click="Button_OnClick"/>
     </Grid>
 </Window>
